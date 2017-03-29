@@ -17,7 +17,7 @@ angleFromDegrees x = Radians $ (realToFrac x) * pi/180
 angleFromTurns :: (Real t, Floating r) => t -> Angle r
 angleFromTurns x = Radians $ (realToFrac x) * pi*2
 
--- | Create an Angle with the given turns
+-- | Create an Angle with the given radians
 angleFromRadians :: (Floating r) => r -> Angle r
 angleFromRadians = Radians
 
